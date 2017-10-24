@@ -1,5 +1,6 @@
+/** @jsx h */
 import './style';
-import { Component } from 'preact';
+import { h, Component, render } from 'preact';
 import Dimlight from './components/Dimlight';
 
 export default class App extends Component {
@@ -27,3 +28,5 @@ export default class App extends Component {
 		);
 	}
 }
+
+render(<App/>, document.body, document.body.children[0]);
