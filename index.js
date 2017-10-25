@@ -3,6 +3,8 @@ import './style';
 import { h, Component, render } from 'preact';
 import Dimlight from './components/Dimlight';
 
+const isDev = process.env.NODE_ENV === 'development';
+
 export default class App extends Component {
 
 	componentDidMount() {
@@ -19,6 +21,7 @@ export default class App extends Component {
 	}
 
 	render(props, {op}) {
+
 		return (
 			<div>
 				<h1 onClick={this.moreOpacity.bind(this)}>Hello, World!</h1>
@@ -29,4 +32,6 @@ export default class App extends Component {
 	}
 }
 
-render(<App/>, document.body, document.body.children[0]);
+if(!isDev) {
+    render(<App/>, document.body, document.body.children[0]);
+}
