@@ -1,7 +1,7 @@
 import {h} from 'preact';
-import {deep} from 'preact-render-spy';
+import {shallow, deep} from 'preact-render-spy';
 import {render} from 'preact-render-to-string';
-import {Dimlight} from './Dimlight';
+import Dimlight from './Dimlight';
 
 it('lets you do cool things with preact components', () => {
     let comp = <Dimlight op="0.3"></Dimlight>;
