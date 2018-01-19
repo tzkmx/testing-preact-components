@@ -1,40 +1,22 @@
 {
-  "private": true,
-  "name": "testing-preact-components",
-  "version": "0.0.0",
-  "license": "The Unlicense",
-  "scripts": {
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
-    "dev": "preact watch",
-    "lint": "eslint src",
-    "test": "jest"
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-synacor",
-    "eslintIgnore": [
-      "build/*"
-    ]
+  "name": "preact-testing-demo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "preact": "^8.2.6",
+    "preact-redux": "^2.0.3"
   },
   "devDependencies": {
     "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-preact": "^1.1.0",
-    "eslint": "^4.5.0",
-    "eslint-config-synacor": "^1.1.0",
-    "if-env": "^1.0.0",
-    "jest": "^21.2.1",
-    "preact-cli": "^2.0.0",
-    "preact-render-spy": "^1.2.1",
-    "preact-render-to-string": "^3.7.0",
-    "react": "github:preact-compat/react",
-    "react-dom": "github:preact-compat/react-dom",
-    "regenerator-runtime": "^0.11.0",
-    "webpack": "^3.8.1"
+    "jest": "^22.1.4",
+    "preact-render-spy": "^1.2.1"
   },
-  "dependencies": {
-    "preact": "^8.2.1",
-    "preact-compat": "^3.17.0"
-  }
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jesus Franco Martinez",
+  "license": "MIT"
 }
