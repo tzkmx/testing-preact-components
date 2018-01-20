@@ -15,11 +15,3 @@ describe('preact render spy', () => {
   })
 
 })
-
-/*
- context.find('[onClick]').simulate('click');
-
- expect(context.find('p').attr('style')).toBe({opacity:0.6});
- */
-
-
